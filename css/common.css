@@ -1,0 +1,818 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+@-webkit-viewport {
+    width: device-width;
+}
+@-moz-viewport {
+    width: device-width;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding-top: 85px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    blr: expression(this.onFocus=this.blur()); /*for ie*/
+    outline: none; /*for ff*/
+}
+
+a:focus {
+    outline: none;
+}
+
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*header*/
+.header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(57, 57, 57, 0.075);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(57, 57, 57, 0.075);
+    -mozbox-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(57, 57, 57, 0.075);
+}
+
+.header .logo {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+/*banner*/
+.banner {
+    background-color: #2684c2;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    overflow: auto;
+}
+
+.banner img {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.banner .carousel-caption {
+    top: 10%;
+    padding: 0;
+}
+
+/*solution*/
+.solution {
+    font-family: arial, "微软雅黑", "宋体";
+}
+
+.solution .panel-title {
+    background-color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 3em;
+}
+
+.solution .box {
+    background-color: #fff;
+}
+
+.solution .nav-tabs {
+    padding: 20px 0;
+    border: none;
+}
+
+.solution .nav {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.solution .nav-tabs li {
+    width: 20%;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+}
+
+.solution .nav-tabs a {
+    color: #d3d3d3;
+    border: none;
+    margin: 0;
+}
+.solution .nav-tabs a:hover,.solution .nav-tabs a:focus{
+    color: #269abc;
+    background:none;
+}
+.solution .nav-tabs .active a {
+    border: none;
+    color: #269abc;
+}
+.solution .nav-tabs .active a:hover,.solution .nav-tabs .active a:focus {
+    border: none;
+    color: #269abc;
+}
+
+.solution .nav-tabs .active .point {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    margin-left: -18px;
+    margin-top: -5px;
+    background-image: url("../images/point.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.solution .tab-content {
+    background-color: #2684c2;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: inset 0 0px 5px rgba(57, 57, 57, 0.3);
+    -webkit-box-shadow: inset 0 0px 5px rgba(57, 57, 57, 0.3);
+    -moz-box-shadow: inset 0 0px 5px rgba(57, 57, 57, 0.3);
+}
+
+.service-about-join {
+    font-family: arial, "微软雅黑", "宋体";
+    width: 100%;
+    height: 100%;
+}
+
+.service-about-join a:hover, .service-about-join a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.service-about-join a:hover {
+    color: #6b6b6b;
+}
+
+.service-about-join .left .panel-title {
+    background-color: #fff;
+    margin-top: 20px;
+    color: #999;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 3em;
+    padding: 0 20px;
+}
+
+.service-about-join .right .panel-title {
+    background-color: #fff;
+    margin-top: 20px;
+    color: #999;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 3em;
+    padding: 0 20px;
+}
+
+.service-about-join .service {
+    height: 250px;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.service-about-join .service .service-control {
+    position: absolute;
+    font-family: sans-seri;
+    color: #898989;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 35px;
+    top: -49px;
+}
+
+.service-about-join .service .service-control:hover {
+    text-decoration: none;
+    outline: none;
+    color: #269abc;
+}
+
+.service-about-join .service .service-control:focus {
+    outline: none;
+    text-decoration: none;
+
+}
+
+.service-about-join .service .prev {
+    right: 48px;
+}
+
+.service-about-join .service .next {
+    right: 0px;
+}
+
+.service-about-join .join {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+/*
+.service-about-join .join .table {
+    border: none;
+
+}
+
+.service-about-join .join td {
+    border: none;
+    font-size: 12px;
+}*/
+.service-about-join .join-list{
+    width: 100%;
+    overflow: hidden;
+}
+.service-about-join .join-list li{
+    float: left;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.service-about-join .join a {
+    color: #666;
+}
+
+.service-about-join .more {
+    float: right;
+    line-height: 48px;
+}
+
+.service-about-join .about {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.service-about-join .panel-body {
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #666;
+    text-indent: 2em;
+
+}
+
+.footer {
+    background-color: #283130;
+    border-bottom: 3px solid #8284e5;
+    color: #6b6b6b;
+    padding: 30px 0;
+    font-family: arial, "微软雅黑", "宋体";
+    margin-top: 20px;
+}
+
+.footer .logo {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer .copy {
+    font-size: 12px;
+    font-family: arial, "微软雅黑", "宋体";
+}
+
+.footer .contact {
+    line-height: 20px;
+    font-family: arial, "微软雅黑", "宋体";
+    font-size: 12px;
+}
+
+.footer .nav-mine {
+    overflow: hidden;
+    line-height: 1.8em;
+}
+
+.footer .nav-mine li {
+    float: left;
+    color: #6c6c6c;
+}
+
+.footer .nav-mine a {
+    color: inherit;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.side{
+    background-color: #2684c2;
+    margin-top: 20px;
+    color: #fff;
+    font-family: arial, "微软雅黑", "宋体";
+}
+.side a{
+    color: inherit;
+    padding: 0 20px;
+
+}
+.side a:hover,.side a:focus{
+    text-decoration: none;
+}
+.side em{
+    clear: both;
+    display: block;
+    margin: 5px 20px;
+    height: 1px;
+    overflow: hidden;
+    background-color: #4897cc;
+}
+.side .panel-title{
+    padding: 0 20px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 18px;
+    border-bottom: 1px solid #4897cc;
+}
+
+.side .panel-body{
+    padding: 20px 0;
+}
+
+.side .panel-body li{
+    line-height: 52px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.side .panel-body i{
+    margin-right: 10px;
+    font-size: 32px;
+}
+.side .panel-body a span{
+    line-height: 30px;
+}
+.side .panel-body .active a{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #fff;
+    color: #269abc;
+
+}
+
+.content{
+    margin-top: 20px;
+    font-family: arial, "微软雅黑", "宋体";
+}
+.content .breadcrumb{
+    background-color: #fff;
+    border-radius: 0;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    border-bottom: 1px solid #e2e2e2;
+    margin: 0;
+}
+
+.content .cont{
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header .nav {
+        font-family: arial, "微软雅黑", "宋体";
+    }
+    .header .navbar-toggle{
+        top: 20px;
+    }
+    .header .navbar-toggle .icon-bar{
+        background-color: #269abc;
+    }
+    .header .nav li a:hover, .header .nav li a:focus {
+        text-decoration: none;
+        color: #8284e5;
+        background-color: #fafafa;
+        border-left: 3px solid #8284e5;
+    }
+    .header .nav li span{
+        padding-left: 10px;
+    }
+    .service-about-join .join-list li{
+        width: 100%;
+    }
+
+
+
+    .side em{
+        display: none;
+    }
+    .side .panel-body{
+        padding: 0 20px;
+    }
+    .side .panel-body a{
+        display: block;
+        padding: 0;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .side .panel-body a i{
+        display: none;
+    }
+    .side-solution .panel-body li{
+        float: left;
+        width: 20%;
+        height: 100%;
+    }
+
+    .content .cont{
+        min-height: 250px;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header .nav {
+        font-family: arial, "微软雅黑", "宋体";
+        border-left:  1px solid #f1f1f1;
+        margin-left: 20px;
+    }
+
+    .header .nav li {
+        width: 70px;
+        height: 85px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .header .nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 85px;
+        padding: 0;
+        margin: 0;
+        color: #6c6c6c;
+    }
+
+    .header .nav li a:hover, .header .nav li a:focus,.header .nav .active a {
+        text-decoration: none;
+        color: #8284e5;
+        background-color: #fafafa;
+        border: none;
+        border-top: 3px solid #8284e5;
+        line-height: 80px;
+    }
+    .header .nav i{
+        display: none;
+    }
+    .header .nav li a:hover i,.header .nav .active i{
+        display: block;
+    }
+    .header .nav li a:hover span,.header .nav .active span{
+        display: none;
+    }
+
+    .header .nav i{
+        font-size: 30px;
+    }
+    .solution .nav .iconfont {
+        font-size: 90px;
+    }
+
+    .solution .nav p {
+        font-size: 30px;
+    }
+
+    .service-about-join .left {
+        width: 100%;
+    }
+
+    .service-about-join .right {
+        width: 100%;
+    }
+
+    .service-about-join .about {
+        height: 100%;
+    }
+
+    .service-about-join .join-list li{
+        width: 50%;
+    }
+
+    .footer .copy {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer .contact {
+        text-align: left;
+    }
+    .side em{
+        display: none;
+    }
+    .side .panel-body{
+        padding: 0 20px;
+    }
+    .side-solution .panel-body li{
+        float: left;
+        width: 20%;
+        height: 100%;
+    }
+
+    .content .cont{
+        min-height: 250px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .header .nav {
+        font-family: arial, "微软雅黑", "宋体";
+        border-left:  1px solid #f1f1f1;
+    }
+
+    .header .nav li {
+        width: 95px;
+        height: 85px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .header .nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 85px;
+        padding: 0;
+        margin: 0;
+        color: #6c6c6c;
+    }
+
+    .header .nav li a:hover, .header .nav li a:focus,.header .nav .active a {
+        text-decoration: none;
+        color: #8284e5;
+        background-color: #fafafa;
+        border-top: 3px solid #8284e5;
+        line-height: 80px;
+    }
+    .header .nav i{
+        display: none;
+    }
+    .header .nav li a:hover i,.header .nav .active i{
+        display: block;
+    }
+    .header .nav li a:hover span,.header .nav .active span{
+        display: none;
+    }
+
+    .header .nav i{
+        font-size: 30px;
+    }
+    /*-------------*/
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .solution .nav .iconfont {
+        font-size: 100px;
+    }
+
+    .solution .nav p {
+        font-size: 30px;
+    }
+
+    .service-about-join .left {
+        width: 75%;
+    }
+
+    .service-about-join .right {
+        width: 25%;
+    }
+
+    .service-about-join .left .panel-title {
+        margin-right: 20px;
+    }
+
+    .service-about-join .service {
+        margin-right: 20px;
+    }
+
+    .service-about-join .join {
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    .service-about-join .about {
+        height: 419px;
+    }
+
+
+    .service-about-join .join-list li{
+        width: 33%;
+    }
+
+    .footer .copy {
+        text-align: right;
+        padding-bottom: 10px;
+
+    }
+
+    .footer .contact {
+        text-align: right;
+    }
+    .side{
+        float: left;
+        width: 20%;
+    }
+    .side .panel-body{
+        padding: 0;
+    }
+    .side .panel-body li{
+
+        width: 100%;
+    }
+
+
+    .content .cont{
+        min-height: 250px;
+    }
+
+    .content{
+        float: right;
+        width: 80%;
+    }
+    .content .cont{
+        min-height: 600px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header .nav {
+        font-family: arial, "微软雅黑", "宋体";
+        border-left:  1px solid #f1f1f1;
+    }
+
+    .header .nav li {
+        width: 95px;
+        height: 85px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    .header .nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 85px;
+        padding: 0;
+        margin: 0;
+        color: #6c6c6c;
+    }
+
+    .header .nav li a:hover, .header .nav li a:focus,.header .nav .active a {
+        text-decoration: none;
+        color: #8284e5;
+        background-color: #fafafa;
+        border-top: 3px solid #8284e5;
+        line-height: 80px;
+    }
+    .header .nav i{
+        display: none;
+    }
+    .header .nav li a:hover i,.header .nav .active i{
+        display: block;
+    }
+    .header .nav li a:hover span,.header .nav .active span{
+        display: none;
+    }
+
+    .header .nav i{
+        font-size: 30px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .solution .nav .iconfont {
+        font-size: 100px;
+    }
+
+    .solution .nav p {
+        font-size: 30px;
+    }
+
+    .service-about-join .left {
+        width: 75%;
+    }
+
+    .service-about-join .right {
+        width: 25%;
+    }
+
+    .service-about-join .left .panel-title {
+        margin-right: 20px;
+    }
+
+    .service-about-join .service {
+        margin-right: 20px;
+    }
+
+    .service-about-join .join {
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    .service-about-join .about {
+        height: 419px;
+    }
+
+    .footer .copy {
+        text-align: right;
+        padding-bottom: 10px;
+
+    }
+
+    .footer .contact {
+        text-align: right;
+    }
+
+    .side{
+        float: left;
+        width: 20%;
+    }
+    .side em{
+        display: block;
+        clear: both;
+    }
+    .side .panel-body li{
+        width: 100%;
+    }
+    .content{
+        float: right;
+        width: 80%;
+    }
+    .content .cont{
+        min-height: 600px;
+    }
+
+}
